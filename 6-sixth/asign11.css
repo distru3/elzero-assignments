@@ -1,0 +1,11 @@
+div{
+    padding: 20px;
+    border: 2px red solid;
+    width: 400px;
+}
+p{
+    border: inherit;
+    padding: inherit;
+    background-color: #eeeeee;
+    text-align: center;
+}

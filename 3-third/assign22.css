@@ -1,0 +1,29 @@
+div
+{
+    width: 300px;
+    background-color: #ddd;
+    margin: 30px;
+    padding: 10px;
+}
+.element-1
+{
+    border-left: 5px solid rgb(255, 0, 157);
+    outline: 10px;
+    outline-style: solid;
+    outline-color: #ddd;
+}
+.element-2
+{
+    border-left: 10px solid rgb(255, 0, 157);
+    outline: 10px;
+    outline-style: solid;
+    outline-color: #ddd;
+    visibility: hidden;
+}
+.element-3
+{
+    border-left: 5px solid blueviolet;
+    outline: 10px;
+    outline-style: solid;
+    outline-color: #ddd;
+}
