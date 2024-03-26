@@ -1,0 +1,30 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: 20px auto;
+    display:grid;
+    grid-template-rows: 10% 80%;
+    grid-template-columns: repeat(3,30%);
+    align-content:space-evenly;
+    justify-content: space-evenly;
+}
+
+.grid div{
+    background-color: #607D8B;
+    color: white;
+    font-size: 25px;
+    counter-increment: count;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid div::before{
+    content: "Element " counter(count);
+}

@@ -1,0 +1,19 @@
+div {
+    background-color: #eee !important;
+    font-size: 20px !important;
+    width: 400px !important;
+    margin: 50px auto !important;
+    border: none !important;
+    color: black !important;
+    text-align: center !important;
+}
+
+div::first-line{
+    visibility: hidden;
+}
+
+div::after{
+    content: "Elzero";
+    visibility: visible;
+    margin-right: 80px;
+}
