@@ -1,0 +1,67 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+div {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    margin: 50px auto;
+    border-radius: 50%;
+    border: 10px solid #e91e63;
+    transition: transform 0.3s;
+    border-left-color: transparent;
+    animation-name: spin;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: relative;
+}
+
+div::before{
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 130%;
+    border-radius: 50%;
+    height: 130%;
+    border: #2490FF 10px solid;
+    -webkit-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-right-color: transparent;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+}
+div::after{
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 160%;
+    border-radius: 50%;
+    height: 160%;
+    border: #FCB400 10px solid;
+    -webkit-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-top-color: transparent ;
+    left: -10px;
+    top: -10px;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+}
+
+@keyframes spin {
+    0% {
+    transform: rotate(0deg);
+    }
+    100% {
+    transform: rotate(360deg);
+    }
+}
+
+div:hover{
+    animation-play-state: paused;
+}
